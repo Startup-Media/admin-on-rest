@@ -78,6 +78,8 @@ title: "Reference"
 * [`<Show>`](./Show.md#the-show-component)
 * `<ShowButton>`
 * `<Sidebar>`
+* `<SimpleList>`
+* `<SingleFieldList>`
 * [`<SimpleForm>`](./CreateEdit.html#the-simpleform-component)
 * [`<SimpleList>`](./List.html#the-simplelist-component)
 * [`<SimpleShowLayout>`](./Show.html#the-simpleshowlayout-component)

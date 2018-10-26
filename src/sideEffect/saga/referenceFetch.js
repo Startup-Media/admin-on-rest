@@ -33,7 +33,7 @@ const tasks = {};
  * call to finalize() will not be canceled. The delay acts as a
  * debounce.
  *
- * @see https://redux-saga.js.org/docs/recipes/#debouncing
+ * @see http://yelouafi.github.io/redux-saga/docs/recipes/index.html#debouncing
  */
 function* finalize(resource, actionCreator) {
     // combined with cancel(), this debounces the calls
