@@ -25,6 +25,7 @@ const Admin = ({
     customReducers = {},
     customSagas = [],
     customRoutes = [],
+		externalCustomRoutes = [],
     dashboard,
     history,
     locale,
@@ -77,6 +78,14 @@ const Admin = ({
                                     })}
                             />
                         )}
+											 	{ externalCustomRoutes.map((route, index) => (
+                          <Route
+                            key={index}
+                            exact={route.props.exact}
+                            path={route.props.path}
+                            component={route.props.component}
+                          />
+												))}
                         <Route
                             path="/"
                             render={routeProps => (
@@ -115,6 +124,7 @@ Admin.propTypes = {
     customSagas: PropTypes.array,
     customReducers: PropTypes.object,
     customRoutes: PropTypes.array,
+		externalCustomRoutes: PropTypes.array,
     dashboard: componentPropType,
     history: PropTypes.object,
     loginPage: componentPropType,
